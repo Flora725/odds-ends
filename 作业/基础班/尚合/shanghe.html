@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shanghe</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.up{
+			height: 63px;
+			border-bottom: 1px solid #eee;
+			padding-top: 20px;
+		}
+		.wrap,.wrap2, .wrap3{
+			width: 980px;
+			margin: 0 auto;
+		}
+		.down{
+			height: 58px;
+			background-image: url(nav_bg.png);
+		}
+		.logo{
+			float: left;
+		}
+		.search{
+			float: right;
+		}
+		.down li{
+			float: left;
+			display: inline-block;
+		}
+		.pro{
+			width: 980px;
+			margin: 0 auto;
+		}
+		.share{
+			float: right;
+		}
+		.mid{
+			height: 40px;
+			background-color: #eee;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+		.thr{
+			height: 300px;
+		}
+		.down ul{
+			width: 980px;
+			margin: 0 auto;
+		}
+		.down li{
+			list-style: none;
+			height: 55px;
+		}
+		.down a{
+			color: black;
+			display: inline-block;
+			font: normal bold 14px/55px "simhei" ;
+			text-decoration: none;
+			width: 130px;
+			border-right: 1px solid white;
+			border-left: 1px solid #DFDFDF;
+			text-align: center
+		}
+		a.l{
+			border-left: 0px;
+		}
+		a.r{
+			border-right: 0px solid white;
+		}
+		.wrap2{
+			font: normal normal 12px "Microsoft Yahei";
+			line-height: 29px;
+		}
+		.tong2{
+			height: 29px;
+			border-top: 1px solid #EFEFEF;
+			border-bottom: 1px solid #EFEFEF;
+			background-color: #FBFBFB;
+		}
+		.sh{
+			float: right;
+			margin: 6px 6px 0px 0px;
+		}
+		.thr{
+			height: 224px;
+			border: 1px solid #E4E4E4;
+			float: left;
+		}
+		.left{
+			width: 310px;
+		}
+		.middle{
+			width: 373px;
+		}
+		.right{
+			width: 268px;
+		}
+		.wrap3{
+			margin-top: 15px;
+		}
+		.middle{
+			margin: 0 11px;
+		}
+		.middle li{
+			list-style: none;
+			line-height: 27px;
+			border-bottom: 1px dashed #DCDCDC;
+		}
+		.middle ul{
+			margin: 5px 18px 0px 23px;
+		}
+		.middle a{
+			text-decoration: none;
+			color: #666;
+			font: 13px "Microsoft Yahei";
+		}
+		a.re{
+			color: red;
+		}
+		.thr{
+			background: url(slogo.png) no-repeat 4px 13px;
+		}
+
+		h3{
+			text-indent: 2em;
+			color: #7AB800;
+			font: normal bold 14px  "simhei";
+			margin-top: 13px;
+		}
+		.tong3{
+			clear: both;
+			height: 20px;
+		}
+		.tong4{
+			height: 100px;
+			background-color: #333;
+		}
+		.left{
+			position: relative;
+		}
+		.arr1{
+			position: absolute;
+			top: 110px;
+			left: 20px;
+		}
+		.arr2{
+			position: absolute;
+			top: 50px;
+			right: 110px;
+		}
+		.arr3{
+			position: absolute;
+			top: 110px;
+			right: 20px;
+		}
+		.right ul, .add{
+			margin: 5px 0px 30px 27px;
+
+			-left: 27px;
+			margin-top: 5px;
+		}
+		.right li{
+			list-style: none;
+			height: 20px;
+			background: url(line.png) no-repeat 1px;
+			text-indent: 1em;		
+		}
+		.right a{
+			color: #666;
+			font: 13px "Microsoft Yahei";
+			text-decoration: none;
+			
+		}
+		.add{
+			color: #666;
+			font: 13px "Microsoft Yahei";
+			text-decoration: none;
+			line-height: 25px;
+		}
+		dl{
+			float:left;
+			color: #bbb;
+			font: 8px "Microsoft Yahei";
+			margin: 10px 30px 0px 0px;
+		}
+		dt{
+			color: #eee;
+			font: normal bold 10px "Microsoft Yahei";
+			margin: 0 0 10px 0;
+		}
+		.tong4{
+			height: 150px;
+		}
+		.tong4 .wrap{
+			position: relative;
+			width: 980px;
+		}
+		.tong4 img{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+
+
+		}
+		.tong5{
+			background-color: #333;
+			border-top: 1px dashed #666;
+			text-align: center;
+			font: 8px "simhei";
+			line-height: 20px;
+			padding-bottom: 50px;
+			position: relative;
+		}
+		.foo{
+			position: absolute;
+			left: 610px;
+			top: 50px;
+		}
+
+	
+	</style>
+</head>
+<body>
+	<div class="tong">
+		<div class="up">
+			<div class="wrap">
+				<img class="logo" src="logo.png" alt="">
+				<img class="search" src="search.png" alt="">
+			</div>
+		</div>
+		<div class="down">
+			<ul>
+				<li><a class="l" href="">首页</a></li>
+				<li><a href="">智能手机</a></li>
+				<li><a href="">平板电脑</a></li>
+				<li><a href="">配件</a></li>
+				<li><a href="">服务支持</a></li>
+				<li><a class="r" href="">关于尚和</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pro">
+		<img src="banner.png" alt="">
+	</div>
+	<div class="tong2">
+		<div class="wrap2">
+			<strong>最新公告：</strong>&nbsp;&nbsp;尚合Aone智能手机入网证已经获工信部门审批下发。尚合官方
+			<img class="sh" src="share.png" alt="">
+		</div>
+	</div>
+	<div class="wrap3">
+		<div class="left thr">
+			<h3>新品发布</h3>
+			<img class="arr1" src="left.png" alt="">
+			<img class="arr2" src="ph.png" alt="">
+			<img class="arr3" src="rig.png" alt="">
+		</div>
+		<div class="middle thr">
+			<h3>新闻中心</h3>
+			<ul>
+				<li><a class="re" href="">致歉公告</a></li>
+				<li><a href="">首批尚合Aonet已全部售馨!</a></li>
+				<li><a href="">【媒体报导】国产高性价比 尚合Aonet四核手机评测</a></li>
+				<li><a href="">我司产品已经通过了国家强制性产品3C认证</a></li>
+				<li><a href="">尚合Aone智能手机入网证已经获工信部门审批下发.</a></li>
+				<li><a href="">我司通过ISO9001:2008国际质量管理体系认证.</a></li>
+			</ul>
+		</div>
+		<div class="right thr">
+			<h3>技术与支持</h3>
+			<ul>
+				<li><a href="">售后服务</a></li>
+				<li><a href="">投诉与建议</a></li>
+				<li><a href="">联保网点</a></li>
+				<li><a href="">常见问题FAQ？</a></li>
+			</ul>
+			<span class="add">深圳市汇聚众合科技发展有限公司</span>
+			<span class="add">服务热线：400-633-7922</span>
+			
+		</div>
+	</div>
+	<div class="tong3"></div>
+	<div class="tong4">
+		<div class="wrap">
+			<img src="back_top.png" alt="">
+			<dl>
+				<dt>尚合首页
+					<dd>返回首页</dd>
+				</dt>
+			</dl>
+			<dl>
+				<dt>智能手机
+					<dd>Aone-T</dd>
+					<dd>Aone</dd>
+				</dt>
+			</dl>
+			<dl>
+				<dt>平板电脑
+					<dd>尚PAD S200</dd>
+					<dd>尚PAD S100</dd>
+					<dd>尚PAD SH-Q7</dd>
+					<dd>尚PAD SH-Q5</dd>
+				</dt>
+			</dl>
+			<dl>
+				<dt>配件中心
+					<dd>Aone 智能手机</dd>
+				</dt>
+			</dl>
+			<dl>
+				<dt>服务与支持
+					<dd>售后服务</dd>
+					<dd>投诉与建议</dd>
+					<dd>联保网点</dd>
+					<dd>常见问题FAQ</dd>
+					<dd>订单查询</dd>
+					<dd>下载专区</dd>
+				</dt>
+			</dl>
+			<dl>
+				<dt>关于我们
+					<dd>公司介绍</dd>
+					<dd>企业文化</dd>
+					<dd>工作机会</dd>
+					<dd>法律声明</dd>
+					<dd>联系我们</dd>
+				</dt>
+			</dl>
+			<dl>
+				<dt>新闻中心
+					<dd>公司新闻</dd>
+					<dd>媒体报导</dd>
+					<dd>行业动态</dd>
+				</dt>
+			</dl>
+			<dl>
+				<dt>常用链接
+					<dd>百度</dd>
+					<dd>Google</dd>
+					<dd>新浪微博</dd>
+				</dt>
+			</dl>
+		</div>
+	</div>
+	<div class="tong5">
+		&copy;2011-2012版权所有 深圳市汇聚众合科技发展有限公司 （品牌：尚合-SAMHAVE） 服务热线：400-633-7922 <br>
+		经营许可证编号：粤ICP备11077821号-1
+		<img class="foo" src="foo.png" alt="">
+	</div>
+</body>
+</html>

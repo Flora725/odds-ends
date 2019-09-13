@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        #box {
+            width: 360px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        #box img {
+            vertical-align: middle;
+        }
+        #box ul {
+            overflow: hidden;
+            border-top: 1px solid #ccc;
+        }
+        #box li {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <img src="01big.jpg" id="bigpic" alt=""/>
+    <ul id="imgs">
+        <li><img src="01.jpg" alt="1"/></li>
+        <li><img src="02.jpg" alt="2"/></li>
+        <li><img id="three" src="03.jpg" alt="3"/></li>
+        <li><img src="04.jpg" alt="4"/></li>
+        <li><img src="05.jpg" alt="5"/></li>
+    </ul>
+</div>
+<script>
+    var bigpic=document.getElementById("bigpic");
+    var imgs = document.getElementsByTagName("img");
+    for(var i= 0;i<imgs.length;i++){
+        imgs[i].onclick = function(){
+            changepic(this.alt);
+        };
+    }
+    function changepic(a){
+        bigpic.src = "0"+ a + "big.jpg";
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+ÉÏÎç
+
+1¡£È«ÊÇF
+2¡£d=14  e=11  f=17  g=19
+3. true     false     false    false false   false

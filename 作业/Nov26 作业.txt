@@ -1,0 +1,13 @@
+
+2.京东广告栏上点击右边的按钮关闭广告
+
+
+拓展：改进replace
+
+<div class = "one two cshow show"></div> 
+
+这种情况如果使用replace("show","hide") 会把cshow中的show也替换成hide
+
+提示:用split把类名按照空格切开
+
+

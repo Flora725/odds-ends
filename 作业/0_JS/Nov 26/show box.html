@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .show{
+            display: block;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="hide" id="btn"/>
+<div id="box"></div>
+
+<script>
+    var btn=document.getElementById("btn");
+    var box = document.getElementById("box");
+    btn.onclick = function(){
+        if(btn.value==="hide"){
+            box.className="hide";
+            btn.value="show";
+        }
+        else{
+            box.className="show";
+            btn.value="hide";
+        }
+
+    }
+</script>
+</body>
+</html>

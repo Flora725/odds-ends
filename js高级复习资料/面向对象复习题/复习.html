@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+//1、-------------------------------------------------------------------------------------
+// (function(b) {
+//     console.log(b); // 1
+//     var b = c = 2;
+//     console.log(b); // 2
+// })(1)
+
+//2、-------------------------------------------------------------------------------------
+// (function(b) {
+//     console.log(b); // 函数体
+//     var b = c = 2;
+//     console.log(b);
+//     function b(){}
+//     console.log(b); // 2
+// })(1)
+
+//3、-------------------------------------------------------------------------------------
+// (function(){
+//  var a = b = 3;
+// })();
+
+
+// console.log((typeof a !== 'undefined')); // false
+// console.log((typeof b !== 'undefined')); // true
+
+// typeof 出现undefined 两种情况:
+// 1. 数据的值就是undefined ==> 申明变量没有赋值
+// 2. 变量没有申明 typeof 该变量也是undefined
+
+//4、-------------------------------------------------------------------------------------
+// (function(x) {
+//      return (function(y) {
+//         console.log(x);
+//      })(2)
+// })(1);
+
+//5、-------------------------------------------------------------------------------------
+// var myObject = {
+//      foo: "bar",
+//      func: function() {
+//         var self = this; // myObject
+//         console.log( this.foo); // bar
+//         console.log( self.foo); // bar
+//         (function() {
+//             console.log(this.foo); // undefined 只要是立即执行函数(自调用函数) 塔内部的this都是指向window
+
+//             console.log(self.foo); // bar
+//         }());
+//      }
+// };
+// myObject.func();
+
+// var o = {};
+// o.age;
+
+// 对象的属性查找原则
+// 1.在当前对象o上面查找age属性
+// 2.o上没有找到 会到o的原型对象上查找  ==> o.__proto__ === Object.prototype ==>null
+// 3.如果原型对象(原型链)上没有找到 最终返回undefined
+
+// function Person () {
+
+// }
+// var p = new Person();
+
+// 原型链结构
+// p.__proto__(Person.prototype) ==> Object.prototype ==> null
+
+//6、-------------------------------------------------------------------------------------
+//写一个下面两种方式都能调用的函数
+//console.log(sum(2,3)); // Outputs 5
+//console.log(sum(2)(3)); // Outputs 5
+
+// function sum() {
+//     var x = arguments[0];
+
+//     if(arguments.length === 2){
+//         return arguments[0] + arguments[1];
+//     }
+
+//     return function () {
+//         return x + arguments[0];
+//     }
+// }
+
+// console.log(sum(2,3)); // Outputs 5
+// console.log(sum(2)(3)); // Outputs 5
+
+// 柯里化函数:把接受多个参数的函数，转换成接受一个参数的函数，并返回一个函数,返回的函数可以接收原函数剩下的参数
+//
+// getSum(1,2,3,4) 10
+// getSum(1)(2,3,4) 10
+// getSum(1)(2)(3,4) 10
+// getSum(1)(2)(3)(4) 10
+
+
+
+//7、-------------------------------------------------------------------------------------
+// 完成下面函数
+//function repeat (func, times, wait) {
+//}
+
+// 1.这个函数能返回一个新函数，比如这样用
+// var repeatedFun = repeat(alert, 10, 5000)
+// 2.调用这个 repeatedFun ("hellworld") 会alert十次 helloworld, 每次间隔5秒
+//
+
+//js原生方法执行上下文和分配给自定义对象后的执行上下文不一致
+// function repeat (func, times, wait) {
+
+//     return function(str){
+//         var timer;
+//         // 记录弹窗执行次数
+//         var i = 0;
+//         // 创建一个间歇定时器
+//         timer = setInterval(function(){
+//             i++;
+//             // 当i大于times时清除定时器
+//             if(i > times){
+//                 clearInterval(timer);
+//                 return;
+//             }
+//             func(str);
+//             // func.apply(console,[str]);
+//             // func.call(console,str);
+//         },wait);
+//     }
+// }
+// var repeatedFun = repeat(console.log.bind(console), 5, 1000)
+// repeatedFun ("hellworld");
+
+var iArray = []; 
+function getRandom(istart, iend){
+        var iChoice = iend - istart +1;
+        return Math.floor(Math.random() * iChoice + istart);
+}
+for(var i=0; i<10; i++){
+        iArray.push(getRandom(10,100));
+}
+iArray.sort();
+
+
+</script>
+</html>

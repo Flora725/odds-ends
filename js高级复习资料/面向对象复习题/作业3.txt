@@ -1,0 +1,146 @@
+
+
+/* 1.0 ***********************/
+
+function fun(n,o) {
+  console.log(o);
+  return {
+    fun:function(m){
+      return fun(m,n);
+    }
+  };
+}
+var a = fun(0);  a.fun(1);  a.fun(2);  a.fun(3);//?,?,?,?
+var b = fun(0).fun(1).fun(2).fun(3);//?,?,?,?
+var c = fun(0).fun(1);  c.fun(2);  c.fun(3);//?,?,?,?
+//问:三行a,b,c的输出分别是什么？
+
+
+
+/* 2.0 ***********************/
+var x = 10;
+var obj = {
+    x: 20,
+    f: function(){
+        console.log(this.x);
+
+        var foo = function(){ console.log(this.x); }
+        foo();
+    }
+};
+
+obj.f();
+
+/* 3.0 ***********************/
+var obj1 = {
+    name: 'zs',
+    getName: function() {
+        return this.name;
+    }
+}
+
+var obj2 = {
+    name : 'ls'
+}
+
+console.log(obj1.getName()) ;
+console.log(obj1.getName.call(obj2)) ;
+
+/* 4.0 ***********************/
+var obj = {
+    myname : 'zs',
+    getNname : function() {
+        return this.myname;
+    }
+}
+
+console.log(obj.getNname())
+
+var getname2 = obj.getNname;
+
+console.log(getname2()) ;
+
+/* 5.0 ***********************/
+window.color = "red";
+var o = {
+    color:"blue"
+};
+
+function sayColor(){
+    alert(this.color);
+}
+var objectSayColor = sayColor.bind(o);
+objectSayColor();
+
+/* 6.0 ***********************/
+function fn1(){console.log(1)};
+
+function fn2(){console.log(2)};
+
+fn3 = fn2.call;
+
+fn2.call(fn1);//请问输出什么结果，为什么
+
+fn3.call(fn1);//请问输出什么结果，为什么
+
+fn3.call.call(fn1);//请问输出什么结果，为什么
+
+
+/* 7.0 ***********************/
+var name = "The Window";
+var object = {
+    name : "My Object",
+    getNameFunc : function(){
+        alert('1.' + this.name);
+        return function(){
+            return this.name;
+        };
+    }
+};
+
+var func = object.getNameFunc();
+alert('2.' + func());
+alert('3.' + func.call(object));
+alert('4.' + func.apply(object));
+
+/* 8.0 ***********************/
+var name = 'global';
+var obj = {
+    name : 'obj',
+    func : function(){
+        this.name = 'func';
+        return function(){
+            return this.name;
+        }
+    }
+}
+
+console.log(obj.func().call(this));
+
+/* 9.0 ***********************/
+var name = 'global';
+var obj = {
+    name : 'obj',
+    func : function(){
+        var that = this;
+        this.name = 'func';
+        return function(){
+            return that.name;
+        }
+    }
+}
+alert(obj.func().call(this));
+
+
+/* 10 ***********************/
+var name = 'global';
+var obj = {
+    name : 'obj',
+    func : function(){
+        this.name = 'func';
+        return function(){
+            return this.name;
+        }.bind(this)
+    }
+}
+alert(obj.func().call(this));

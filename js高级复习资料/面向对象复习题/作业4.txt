@@ -1,0 +1,21 @@
+// 1.封装函数获取一个字符串中的数字字符，并按数组形式输出，如dgfhfgh254bhku289fgdhdy675gfh输出[254,289,675]
+
+// 2.给定字符串 str，检查其是否包含连续重复的字母（a-zA-Z），包含返回 true，否则返回 false
+// 例如:aabcderff 返回true  ABCABC 返回false
+
+ function containsRepeatingLetter(str) {
+
+      return /([a-zA-Z])\1/.test(str);
+ }
+
+// 3.给定字符串 str，检查其是否符合如下格式 
+// - XXX-XXX-XXXX 
+// - 其中 X 为 Number 类型(即数字)
+
+function matchesPattern(str) {
+     return /^(\d{3}-){2}\d{4}$/.test(str);
+}
+
+// 4.封装函数使用正则和replace方法 让2016-12-26 变成 2016.12.26
+
+// 5.封装函数使用正则去掉字符串前后空格

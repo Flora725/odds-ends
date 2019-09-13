@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <p>我是p标签</p>
+</div>
+</body>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+
+// $('div').on('click','p',function(){
+//     alert('123');
+// });
+
+/*
+    引用类型属性的继承 ---- 继承引用
+ */
+    // var fun = function() {};
+    // fun.prototype = {
+    //     info:{
+    //         name:'zs',
+    //         age:25
+    //     }
+    // }
+
+    // var a = new fun();
+    // var b = new fun();
+    // a.info.name = "jack";
+    // b.info.name = "tom";
+
+    // console.log(a.name);
+    // console.log(b.name);
+
+    // console.log(fun.prototype.info.name);
+
+
+    // function Person(){}
+    // Person.prototype = {
+    //     name:'zs'
+    // }
+
+    // var p1 = new Person();
+    // var p2 = new Person();
+
+    // p1.name = "aaa";
+    // p2.name = "bbb";
+
+    // console.log(p1.name);
+    // console.log(p1.name);
+
+    // console.log(Person.prototype.name);
+    //
+
+    // function box(obj) {
+    //     obj.name = 'zs';
+    //     var obj = new Object();
+    //     obj.name = 'ls';
+
+    // }
+    // var obj = new Object();
+    // box(obj);
+    // console.log(obj.name);
+
+    // console.log(obj);
+    //
+
+
+// var fn = function() {
+//     console.log('匿名函数');
+// }
+// fn();
+//
+/*****/
+
+function fun(n,o){
+  console.log(o);
+  return {
+    fun:function(m){//[2]
+      return fun(m,n);//[1]
+    }
+  }
+}
+var a=fun(0); // undefined
+a.fun(1); // undefined
+a.fun(2); // undefined
+a.fun(3); // undefined
+var b=fun(0).fun(1).fun(2).fun(3); // undefined undefined
+var c=fun(0).fun(1);
+c.fun(2);
+c.fun(3);
+
+/*
+function fun(n, o) {
+    console.log(o);
+    return {
+        f: function (m) {
+            return fun(m, n);
+        }
+    };
+}
+var a = fun(0);
+a.f(1);
+a.f(2);
+a.f(3);
+
+var b = fun(0).f(1).f(2).f(3);
+
+var c = fun(0).f(1);
+c.f(2);
+c.f(3);
+
+ */
+
+
+// Object:带有行为的数据，Closure:带有数据的行为
+
+</script>
+</html>

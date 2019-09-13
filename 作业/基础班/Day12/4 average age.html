@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		var age = new Array();
+		var sum = 0;
+		var i = 0;
+		while(i<5){
+			var a = prompt("please enter your age:");
+			if(a<0||a>100){
+				a = prompt("please enter your age:");
+			}
+			else{
+				age[i] = +a;
+				sum += +a;
+				i++;
+			}
+		}
+		alert(sum/5);
+	</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

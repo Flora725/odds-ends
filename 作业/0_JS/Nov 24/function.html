@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var bf = new Object();
+        bf.name = "Jay";
+        bf.age = 24;
+        bf.height = 182;
+        bf.hobby = function(){
+            console.log("I love playing games.");
+        };
+
+
+        var hb = new Object();
+        hb.name = "Ciro";
+        hb.age = 26;
+        hb.weight = 132;
+        hb.hobby = function(){
+            console.log("I love fishing.");
+        };
+        bf.grow = hb;
+        console.log(bf);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

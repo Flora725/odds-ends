@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>millet</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.wrapper{
+			width: 1226px;
+			margin: 0 auto;
+		}
+		.nav1{
+			height: 40px;
+			background-color: #333;
+		}
+		.nav1 li{
+			list-style: none;
+			height: 40px;
+			float: left;
+		}
+		.clearfix:after{
+			content:"";
+			height: 0;
+			line-height: 0;
+			display: block;
+			clear: both;
+			visibility: hidden;
+		}
+		.clear{
+			*zoom:1;
+		}
+		.nav1 a{
+			color: #616161;
+			text-decoration: none;
+			font: normal normal 11px/40px "Microsoft Yahei";
+			padding: 0px 7px;
+			border-right: 1px solid #616161;
+		}
+		a.clearl{
+			padding-left: 0px;
+		}
+		.nav1>.wrapper{
+			position: relative;
+		}
+		.nav1 span{
+			color: #616161;
+			font: normal normal 11px/40px "Microsoft Yahei";
+			position: absolute;
+			right: 130px;
+			top: 1px;
+		}
+		.nav2{
+			height: 100px;
+		}
+		.nav2 .wrapper{
+			height: 85px;
+			background: url(mlogo.png) no-repeat 0px 22px;
+			position: relative;
+		}
+		.nav2 ul{
+			position: absolute;
+			left: 120px;
+			top: 22px;
+		}
+		.nav2 li{
+			list-style: none;
+			height: 48px;
+			float: left;
+		}
+		.nav2 a{
+			color: #333;
+			text-decoration: none;
+			font: normal normal 14px/48px "Microsoft Yahei";
+			padding: 0px 14px;
+		}
+		#search{
+			height: 47px;
+			width: 244px;
+			position: absolute;
+			right: 50px;
+			top:20px;
+			font: normal normal 12px/48px "simsun";
+			color: #757575;
+		}
+		#but{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 0px;
+			top:20px;
+		}
+		.main{
+			background-color: #f5f5f5;
+
+		}
+		.main>.wrapper{
+			background-color: white;
+		}
+		span.page1{
+			color: #616161;
+			font: 11px/40px "Microsoft Yahei";
+			display: block;
+			height: 40px;
+			background-color: #f5f5f5;
+		}
+		.choosetv{
+			color:#333;
+			font: normal bold 12px/80px "Microsoft Yahei";
+			padding-left: 38px;
+		}
+		.nav3{
+			position: relative;
+			height: 80px;
+		}
+		.nav3 ul{
+			position: absolute;
+			left: 220px;
+			top: 0px;
+		}
+		.nav3 li{
+			list-style: none;
+			float: left;
+		}
+		.nav3 a{
+			color: #333;
+			text-decoration: none;
+			font: normal normal 14px/80px "Microsoft Yahei";
+			padding: 0px 27px;
+		}
+		span.all{
+			font: normal bold 14px/80px "Microsoft Yahei";
+			color:#ff6700;
+			position: absolute;
+			right:64px;
+		}
+		.mili{
+			width: 606px;
+			height: 490px;
+			float: left;
+			overflow: hidden;
+			background-color: white;
+		}
+		.tv1, .tv3{
+			margin: 14px 14px 0 0;
+		}
+		.tv2, .tv4{
+			margin-top: 14px;
+		}
+		.sport{
+			height: 360px;
+		}
+		.mili .lett{
+			width: 526px;
+			margin: 0 auto;
+			border-top: 1px solid #eee;
+			overflow: hidden;
+			position: relative;
+		}
+		span.big{
+			color: 333;
+			font: normal normal 24px "Microsoft Yahei";
+			display: inline-block;
+			margin: 28px 0 10px 0;
+		}
+		span.col{
+			color: #ff6700;
+			font: normal normal 24px "Microsoft Yahei";
+		}
+		span.small{
+			color: #757575;
+			font: normal normal 12px "Microsoft Yahei";
+			line-height: 20px;
+
+		}
+		.main>.wrapper{
+			background-color: #f5f5f5;
+		}
+		.main .nav3{
+			background-color: white;
+		}
+		span.buy{
+			width: 158px;
+			height: 38px;
+			border: 1px solid #ff6700;
+			position: absolute;
+			right: 0px;
+			top: 30px;
+			color: #ff6700;
+			font: 18px/38px "Microsoft Yahei";
+			text-align: center;
+		}
+		.main{
+			padding-bottom: 13px;
+		}
+		.belle{
+			position: relative;
+		}
+		.belle>img{
+			position: relative;
+		}
+		div.mend{
+			height: 160px;
+			position: absolute;
+			bottom: 0;
+			background-color: #4b4a46;
+			opacity: 0.9;
+			width: 100%;
+		}
+		p.le{
+			font: normal 900 
+			24px "Microsoft Yahei";
+			color:white;
+			padding: 44px 0 20px 78px;
+			display: inline-block;
+		}
+		p.ft{
+			font: 13px "Microsoft Yahei";
+			color:white;
+			width: 659px;
+			padding-left: 78px;
+		}
+		.easy{
+			height: 79px;
+		}
+		div.right div{
+			width: 182px;
+			height: 47px;
+			border: 1px solid #ff6700;
+			line-height: 50px
+		}
+		div.right a{
+			text-decoration: none;
+			color: #ff6700;
+			font: 18px/50px "Microsoft Yahei";
+		}
+		.left{
+			float:left;
+		}
+		.right{
+			float: right;
+			margin-top: 25px;
+			margin-right: 30px;
+		}
+		div.right .ri{
+			margin-bottom: 10px;
+		}
+		.ri .a{
+			margin: 0 auto;
+		}
+		.ght .b{
+			margin: 0 auto;
+		}
+		.easy{
+			height: 79px;
+		}
+		.oneh{
+			width: 243px;
+			height: 79px;
+			float: left;
+		}
+		.oneh>p{
+			height: 17px;
+			color:#bbb;
+			font: 17px "Microsoft Yahei";
+			border-right: 1px solid #e0e0e0;
+			padding-left: 85px;
+			margin-top: 28px;
+		}
+		.easy>.wrapper{
+			border-bottom: 1px solid #e0e0e0;
+		}
+		.def{
+			position: absolute;
+		}
+		.telephone{
+			float: right;
+			width: 251px;
+			height: 192px;
+		}
+		dl{
+			width: 160px;
+			float: left;
+			margin-top: 40px;
+		}
+		dt{
+			color: #424242;
+			font: normal bold 14px "Microsoft Yahei";
+			margin-bottom: 31px;
+		}
+		dd{
+			color: #757575;
+			font: 12px "Microsoft Yahei";
+			height: 25px;
+		}
+		.tel{
+			width: 130px;
+			height: 112px;
+			border-left: 1px solid #eee;
+			margin-top: 40px;
+			padding-left: 56px;
+		}
+		.tel p{
+			text-align: center;
+		}
+		.tel .one{
+			color: #ff6700;
+			font: 20px Arial;
+		}
+		.tel .two{
+			color: #616161;
+			font: 12px "Microsoft Yahei";
+			margin: 10px 0 15px 0;
+		}
+		.tel .three{
+			color: #ff6700;
+			font: 12px "Microsoft Yahei";
+			padding: 5px;
+			border: 1px solid #ff6700;
+		}
+		.bottom{
+			background-color: #fafafa;
+			height: 166px;
+		}
+		.bottom p{
+			text-align: center;
+			color: #ddd;
+			font: 22px "楷体";
+		}
+		.bottom .foot{
+			height: 87px;
+			float:left;
+			background: url(mlogo.png) no-repeat 0px 29px;
+		}
+		.foot li{
+			list-style: none;
+			float: left;
+			padding-right: 3px;
+		}
+		.foot a{
+			text-decoration: none;
+			color: #757575;
+			font: 12px "Microsoft Yahei";
+		}
+		.foot ul{
+			margin-top: 29px;
+			margin-left: 70px;
+		}
+		.foot .gov{
+			color: #b0b0b0;
+			font: 12px "Microsoft Yahei";
+			width: 600px;
+			line-height: 20px;
+			margin-left: 66px;
+		}
+		.bottom .mimg{
+			float: right;
+			margin-top: 33px;
+		}
+		.bottom .slogan{
+			clear: both;
+			padding:30px 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav1">
+		<div class="wrapper">
+			<ul class="clearfix">
+				<li><a class="clearl" href="">小米网</a></li>
+				<li><a href="">MIUI</a></li>
+				<li><a href="">米聊</a></li>
+				<li><a href="">游戏</a></li>
+				<li><a href="">多看阅读</a></li>
+				<li><a href="">云服务</a></li>
+				<li><a href="">小米网移动版</a></li>
+				<li><a href="">问题反馈</a></li>
+				<li><a href="">Select Region</a></li>
+			</ul>
+			<span>登录&nbsp;|&nbsp;注册</span>
+		</div>
+	</div>
+	<div class="nav2">
+		<div class="wrapper">
+			<ul class="clearfix">
+				<li><a href="">全部商品分类</a></li>
+				<li><a href="">小米手机</a></li>
+				<li><a href="">红米</a></li>
+				<li><a href="">平板</a></li>
+				<li><a href="">电视</a></li>
+				<li><a href="">盒子 · 影音</a></li>
+				<li><a href="">路由器</a></li>
+				<li><a href="">智能硬件</a></li>
+				<li><a href="">服务</a></li>
+				<li><a href="">社区</a></li>
+			</ul>
+			<input type="text" value="
+红米3S 小米手环 2" id="search">
+			<input type="button" value="" id="but">
+		</div>
+	</div>
+	<div class="main">
+		<div class="wrapper clearfix">
+			<span class="page1">首页/选购电视 · 盒子</span>
+			<div class="nav3 clearfix">
+				<span class="choosetv">选购电视 · 盒子</span>
+				<ul>
+					<li><a href="">小米电视3S 43英寸</a></li>
+					<li><a href="">小米电视3S 48英寸</a></li>
+					<li><a href="">小米电视3S 65英寸</a></li>
+					<li><a href="">小米电视3 60英寸</a></li>
+					<li><a href="">小米电视3 55英寸</a></li>
+				</ul>
+				<span class="all">查看全部</span>
+			</div>
+			<img src="banner.jpg" alt="">
+			<div class="tv1 mili">
+				<div class="sport"><img src="pr1.jpg" alt=""></div>
+				<div class="detail1 lett">
+					<span class="big">小米电视3S 43英寸</span> <span class="col">1799元</span><br>
+					<span class="small">小尺寸高端旗舰<br>
+					43英寸原装 LG/友达 液晶屏，超薄金属机身</span>
+					<span class="buy">立即购买</span>
+				</div>
+			</div>
+			<div class="tv2 mili">
+				<div class="sport"><img src="pr2.jpg" alt=""></div>
+					<div class="detail2 lett">
+						<span class="big">小米电视3S 48英寸</span> <span class="col">1999元</span><br>
+						<span class="small">黄金尺寸 高端旗舰<br>
+						48英寸原装三星液晶屏，精心设计，低功耗</span>
+						<span class="buy">立即购买</span>
+				</div>
+			</div>
+			<div class="tv3 mili">
+				<div class="sport"><img src="pr3.jpg" alt=""></div>
+				<div class="detail3 lett">
+						<span class="big">小米电视3 55英寸</span> <span class="col">3999元起</span><br>
+						<span class="small">原装三星／LG真4K屏，标配音响电视主机<br>10亿美金资源库，内容新增83%</span>
+						<span class="buy">立即购买</span>
+				</div>
+			</div>
+			<div class="tv4 mili">
+				<div class="sport"><img src="pr4.jpg" alt=""></div>
+				<div class="detail4 lett">
+					<span class="big">小米电视3 60英寸</span>
+					<span class="col">4999元起</span><br>
+					<span class="small">原装LG真4K屏，次世代分体电视</span>
+					<span class="buy">立即购买</span>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="belle wrapper">
+		<img src="phone-section-05.jpg" alt="">
+		<div class="mend clearfix">
+			<div class="left">
+				<p class="le">小米之家及官方授权维修网点</p>
+				<p class="ft">欢迎来小米之家解决你遇到的问题，了解最新的小米官方产品最全面的产品信息，还有很多好玩的活动等你来访。你还可以前往小米授权维修网点解决售后问题，520家网点让服务随时在身边。
+				</p>
+			</div>
+			<div class="right">
+				<div class="ri"><div class="a"><a href="">小米之家</a></div></div>
+				<div class="ght"><div class="b"><a href="">官方维修网点</a></div></div>
+				
+			</div>	
+		</div>
+	</div>
+	<div class="easy">
+		<div class="wrapper clearfix">
+			<div class="oneh"><p>1小时快修服务</p></div> 
+			<div class="oneh"><p>7天无理由退货</p></div> 
+			<div class="oneh"><p>15天免费换货</p></div> 
+			<div class="oneh"><p>满150元包邮</p></div> 
+			<div class="oneh"><p>520余家售后网点</p></div>
+		</div>
+	</div>
+	<div class="linkm">
+		<div class="wrapper clearfix">
+			<div class="def clearfix">
+				<dl>
+					<dt>帮助中心
+					<dd>购物指南</dd>
+					<dd>支付方式</dd>
+					<dd>配送方式</dd>
+					</dt>
+				</dl>
+				<dl>
+					<dt>服务支持
+					<dd>售后政策</dd>
+					<dd>自助服务</dd>
+					<dd>相关下载</dd>
+					</dt>
+				</dl>
+				<dl>
+					<dt>线下门店
+					<dd>小米之家</dd>
+					<dd>服务网点</dd>
+					<dd>零售网点</dd>
+					</dt>
+				</dl>
+				<dl>
+					<dt>关于小米
+					<dd>了解小米</dd>
+					<dd>加入小米</dd>
+					<dd>联系我们</dd>
+					</dt>
+				</dl>
+				<dl>
+					<dt>关注我们
+					<dd>新浪微博</dd>
+					<dd>小米部落</dd>
+					<dd>官方微信</dd>
+					</dt>
+				</dl>
+				<dl>
+					<dt>特色服务
+					<dd>F 码通道</dd>
+					<dd>小米移动</dd>
+					<dd>防伪查询</dd>
+					</dt>
+				</dl>
+			</div>
+			<div class="telephone">
+				<div class="tel">
+					<p class="one">400-100-5678</p>
+					<p class="two">周一至周日 8:00-18:00<br> （仅收市话费）</p>
+ 					<p class="three">24小时在线客服</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="wrapper">
+			<div class="foot">
+				<ul class="clearfix">
+					<li><a href="">小米网</a></li>
+					<li><a href="">| MIUI</a></li>
+					<li><a href="">| 米聊</a></li>
+					<li><a href="">| 多看书城</a></li>
+					<li><a href="">| 小米路由器</a></li>
+					<li><a href="">| 视频电话</a></li>
+					<li><a href="">| 小米后院</a></li>
+					<li><a href="">| 小米天猫店</a></li>
+					<li><a href="">| 小米淘宝直营店</a></li>
+					<li><a href="">| 小米网盟</a></li>
+					<li><a href="">| 问题反馈</a></li>
+					<li><a href="">| Select Region</a></li>
+				</ul>
+				<p class="gov">&copy;mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+				</p>
+			</div>
+			<div class="mimg">
+				<img src="seal.png" alt="">
+				<img src="v-logo-2.png" alt="">
+				<img src="v-logo-2.png" alt="">
+				<img src="v-logo-3.png" alt="">
+			</div>
+			<p class="slogan">探索黑科技，小米为发烧而生！</p>	
+		</div>
+		
+	</div>
+
+
+
+	<div class="wrapper">
+		
+	</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

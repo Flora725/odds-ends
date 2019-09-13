@@ -1,0 +1,202 @@
+/*Start of welcome:*/
+.welcome{
+    height: 26px;
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #f7f7f7;
+    font: 400 12px/26px "microsoft yahei";
+}
+.welcome ul>li{
+    float: left;
+}
+.welcome li>a{
+    margin-left: 11px;
+}
+.welcome i{
+    display: inline-block;
+    border: 4px solid transparent;
+    border-top-color: #434343;
+    margin: 0 6px;
+    vertical-align: -2px;
+}
+/*End of welcome.*/
+
+/*Start of search:*/
+.search .logo{
+    float: left;
+    margin-left: 10px;
+    margin-top: 21px;
+    width: 200px;
+    height: 58px;
+    background: url("../img/sprite.png") no-repeat 0 -10px;
+}
+.search .sear{
+    width: 528px;
+    height: 40px;
+    border: 1px solid #C9C9C9;
+    margin-top: 29px;
+}
+.search .sear input{
+    display: inline-block;
+    width: 419px;
+    border: 1px solid #C9C9C9;
+    padding-left: 4px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #434343;
+    font: 12px/28px "microsoft yahei";
+}
+.search .sear button{
+    width: 93px;
+    background-color: #2F70D0;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: white;
+    font: 16px/30px "microsoft yahei";
+}
+/*End of search.*/
+
+/*Start of navigation:*/
+.nav .wrap{
+    margin-top: 14px;
+    border-bottom: 2px solid #0266A3;
+    color: #0266A3;
+    font: 12px/25px "microsoft yahei";
+}
+.nav ul>li{
+    float: left;
+}
+.nav li>a{
+    padding: 5px 14px;
+    font: bold 14px/25px "microsoft yahei";
+}
+.nav li>a:hover{
+    background-color: #0266A3;
+    color: white;
+}
+.nav .homepage{
+    background-color: #0266A3;
+    color: white;
+}
+/*End of navigation.*/
+
+/*Start of market*/
+.market .wrap{
+    margin-top: 10px;
+    height: 210px;
+}
+.market .wrap dl a{
+    display: block;
+    width: 162px;
+    padding-left: 39px;
+    position: relative;
+}
+.market dl a:hover{
+    background-color: #0266A3;
+    color: white;
+}
+.market .wrap i{
+    display: block;
+    width: 16px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat 0 -71px;
+    position: absolute;
+    left: 9px;
+    top: 8px;
+    
+}
+.market .wrap dt{
+    font: bold 14px/30px "microsoft yahei";
+    color: white;
+    background-color: #0266A3;
+    padding-left: 20px;
+}
+.market .wrap dd{
+    background-color: #EBF0F6;
+    font: 14px/27px "microsoft yahei";
+}
+.market .f{
+    padding-top: 9px;
+}
+.market .l{
+    padding-bottom: 9px;
+}
+.market .slider>img{
+    display: block;
+    width: 519px;
+    height: 210px;
+    margin: 0 10px;
+}
+.slider{
+    position: relative;
+}
+.market .slider ul{
+    position: absolute;
+    bottom: 5px;
+    right: 17px;
+}
+.market .slider li{
+    float: left;
+}
+.market .slider a{
+    display: block;
+    width: 18px;
+    border: 1px solid #dddddd;
+    background-color: #BDCFCB;
+    margin-right: 3px;
+    text-align: center;
+    font: 12px/18px "microsoft yahei";
+    color: black;
+}
+.extra .cheap{
+    width: 228px;
+    height: 93px;
+    background-color: #F7FAFF;
+    border: 1px solid #ddd;
+}
+.extra .cheap h3{
+    font: bold 12px/26px "microsoft yahei";
+    padding-left: 18px;
+}
+.cheap .detail s{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(../img/sprite.png) no-repeat -30px -70px;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+.detail p{
+    font: 12px/21px "microsoft yahei";
+    padding: 14px 21px 0 60px;
+}
+
+
+
+.extra .problem{
+    height: 91px;
+    width: 230px;
+    background-color: #F7FAFF;
+    margin-top: 24px;
+}
+
+
+
+
+
+
+/*End of market.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

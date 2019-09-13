@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .small {
+            width: 50px;
+            height: 50px;
+            background: url(images/bgs.png) no-repeat -159px -51px;
+            position: fixed;
+            right: 10px;
+            top: 40%;
+        }
+
+        .twode {
+            position: absolute;
+            top: 0;
+            left: -150px;
+        }
+
+        .small a {
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="small" id="small">
+    <a href="#"></a>
+
+    <div class="twode hide" id="two">
+        <img src="images/456.png" alt=""/>
+    </div>
+</div>
+<script>
+    var small = document.getElementById("small");
+    var two = document.getElementById("two");
+    small.onmouseover = function () {
+        replace(two, "hide", "show");
+    };
+    small.onmouseout = function () {
+        replace(two, "show", "hide");
+    };
+    function replace(element, oldstr, newstr) {
+        element.className = element.className.replace(oldstr, newstr);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+
+// 分析各题执行结果
+
+// 第一题
+    // var n = 1;
+    // function f1() {
+    //     console.log(n);// 2
+    // }
+    // function f2() {
+    //     console.log(n); // 1
+    //     n = 2;
+    //     f1();
+    //     console.log(n); // 2
+    // }
+    // f2();
+
+
+
+// 不关心函数在哪里调用 只需要寻找函数在哪里申明
+    // 第二题
+    // var m = 1;
+    // function f1() {
+    //     console.log(m); // 1
+    // }
+
+    // function f3() {
+    //     function f2() {
+    //         f1(m);
+    //     }
+    //     f2();
+    //     var m = 3;
+    // }
+    // f3();
+
+    // 第三题
+    // function fn(a) {
+    //     console.log(a);// 1
+    //     a = 10;
+    //     console.log(a);//10
+    // }
+    // fn(1);
+
+  // 第四题
+    // function fn(b) {
+    //     console.log(b); // 函数体
+    //     function b() {
+    //         console.log(b); // 函数体
+    //     }
+    //     b();
+    // }
+    // fn(1);
+
+    // 第五题
+    // function fn(b) {
+    //     console.log(b); // 1
+    //     b = function () {
+    //         console.log(b); //函数体
+    //     };
+    //     b();
+    // }
+    // fn(1);
+
+    // 第六题
+    // function fn(b) {
+    //     console.log(b); // 1
+    //     var b = function () {
+    //         console.log(b); // 函数体
+    //     };
+    //     b();
+    // }
+    // fn(1);
+
+
+    // 第七题
+    // 全局作用域的name没有进行预解析中的申明提升 但是在执行的时候 需要去寻找name的申明
+    // 然后因为已经是顶级作用域(全局作用域)，而且顶级作用域里面没有name的申明，所以就直接标记到了顶级作用域
+
+    // name = "a";
+    // function fn(name) {
+    //     var name = "b";
+
+    //     function fn1() {
+    //         var name = "c";
+    //         console.log(name); // c
+    //     }
+
+    //     function fn2() {
+    //         console.log(name); // b
+    //     }
+
+    //     fn1();
+    //     fn2();
+    // }
+    // fn(1);
+
+
+
+    // 第八题
+    // var a = 10;
+    // function test() {
+    //     a = 100;
+    //     console.log(a); // 100
+    //     console.log(this.a); // 10
+    //     var a;
+    //     console.log(a); //100
+    // }
+    // test();
+    // window.test();
+
+    // var o = {};
+    // o.say = function(argument) {
+    //     console.log(this);
+    // }
+
+
+    // 第九题
+    // function box(obj) {
+    //     obj.name = 'zs';
+    //     obj = new Object();
+    //     obj.name = 'ls';
+    // }
+    // var obj = new Object();
+    // box(obj); // zs
+    // console.log(obj.name);
+
+    // 实参:在执行方法或者函数的时候传递的参数叫做实参
+    // 形参:在函数进行定义(函数申明和函数表达式)的时候存放的参数叫做形参
+    // 区别:
+    // 形参的名字和实参传什么类型(值)没有任何关系
+    // 在函数执行的时候，会把实参的值(或者引用地址)赋值给形参
+
+    // 在执行函数的时候，函数内部预解析之前，就会把形参当做一个变量进行标记
+    // 形参就是局部变量
+
+    // 第10题
+    // var A = function () {
+    // };
+
+    // A.prototype.n = 1;
+
+    // var b = new A(); // b - > A.prototype(有n的属性) -> Object.prototype -> null
+
+    // A.prototype = {
+    //     n: 2,
+    //     m: 3
+    // };
+    // var c = new A(); // c - > {n:2,m:3} -> Object.prototype -> null
+
+    // console.log(b.n); // 1
+    // console.log(b.m); // undefined
+    // console.log(c.n); // 2
+    // console.log(c.m); // 3
+
+// 写一段代码, 生成 5 个 a 标签. 要求在 a 标签中分别显示出 1, 2, 3, 4, 5
+// 即最后得到 <a>1</a><a>2</a><a>3</a><a>4</a><a>5</a>
+
+// (function(){
+//  var a = b = 3;
+// })();
+
+// console.log((typeof a !== 'undefined'));
+// console.log((typeof b !== 'undefined'));
+//
+//
+// function repeat (func, times, wait) {
+//     //不用匿名函数是为了方便调试
+//     function repeatImpl(){
+//         var handle,
+//             _arguments = arguments,
+//             i = 0;
+//         handle = setInterval(function(){
+//             i++;
+//             //到达指定次数取消定时器
+//             if(i === times){
+//                 clearInterval(handle);
+//                 return;
+//             }
+//             func(_arguments[0]);
+//         },wait);
+//     }
+//     return repeatImpl;
+// }
+
+// function repeat(func,times,wait){
+
+//     return function(str){
+
+//         var timer = null;
+//         var i = 0;
+//         // 创建间歇定时器
+//         timer = setInterval(function(){
+//             i++;
+//             if(i > times){
+//                 clearInterval(timer);
+//                 return;
+//             }
+//             func(str);
+
+//         },wait);
+
+//     }
+// }
+
+// var repeatedFun = repeat(alert, 10, 1000)
+// repeatedFun('hello js');
+
+
+//写一个下面两种方式都能调用的函数
+// 柯里化(Currying)是把接受多个参数的函数变换成接受一个单一参数的函数，并且返回一个新函数，这个新函数能够接受原函数的参数。
+// function sum() {
+//   var fir = arguments[0];
+//   if(arguments.length === 2) {
+//     return arguments[0] + arguments[1]
+//   } else {
+//     return function(sec) {
+//        return fir + sec;
+//     }
+//   }
+// }
+// console.log(sum(2,3)); //  5
+// console.log(sum(2)(3)); // 5
+
+
+// sumOf3(1)(2)(3) sumOf3(1, 2)(3) sumOf3(1)(2, 3) sumOf3(1, 2, 3)   6
+/****************通用柯里化函数*******************/
+// var currying = function (fn) {
+//     var _args = [];
+//     return function () {
+//         if (arguments.length === 0) {
+//             return fn.apply(this, _args);
+//         }
+//         Array.prototype.push.apply(_args, [].slice.call(arguments));
+//         return arguments.callee;
+//     }
+// };
+
+// function fn(){
+//     var sum = 0;
+//     for (var i = 0; i < arguments.length; i++) {
+//         sum += arguments[i];
+//     };
+//     return sum;
+// }
+
+// var sum = currying(fn);
+// sum(1)(2,3);
+// console.log(sum());
+
+// function fun(n,o){
+//   console.log(o);
+//   return {
+//     fun:function(m){
+//       return fun(m,n);
+//     }
+//   }
+// }
+// var a=fun(0);
+// a.fun(1);
+// a.fun(2);
+// a.fun(3);
+// var b=fun(0).fun(1).fun(2).fun(3);
+// var c=fun(0).fun(1);
+// c.fun(2);
+// c.fun(3);
+
+// function repeat(func, times, wait) {
+
+//     return function() {
+    	
+//         var i = 0;
+//         var timer = setInterval(function () {
+
+//             i++;
+
+//             if (i <= times) {
+
+//                 func("helloworld");
+
+//             } else {
+//                 clearInterval(timer);
+//             }
+//         }, wait);
+//     }
+// }
+// var repeatedFun=repeat(console.log,10,1000);
+// repeatedFun();
+
+// function repeat (func, times, wait) {
+
+//     return function(arg){
+
+//         var count = 0;
+//         var intervalId = setInterval(function(){
+
+//             if(count>=times){
+//                 clearInterval(intervalId);
+//             }else{
+//                 func(arg + '--' + count);
+//             }
+//             count++;
+//         },wait);
+//     };
+// }
+// var repeatedFun=repeat(console.log.bind(console),10,2000);
+// repeatedFun('helloworld');
+
+function fn(str){
+
+    var arr = [];
+    str.replace(/\d+/g,function(m){
+        arr.push(m);
+    })
+    return arr;
+}
+
+var s = fn('dgfhfgh254bhku289fgdhdy675gfh');
+console.log(s);
+
+</script>
+</html>

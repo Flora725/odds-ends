@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>head</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		div{
+			width: 760px;
+			margin: 0 auto;
+		}
+		.pic{
+			height: 150px;
+			background-image: url(bg.jpg);
+		}
+		.nav{
+			height: 32px;
+			background-image: url(bu.jpg);
+		}
+		a{
+			text-decoration: none;
+		}
+		li {
+			list-style: none;
+			float: left;
+			width: 80px;
+			height:32px;
+			background-image: url(but1.jpg);
+			font: normal normal 12px/32px "simsun";
+			margin-left: 1px;
+			text-align: center;
+		}
+		li:hover{
+			background-image: url(but2.jpg)
+		}
+		.hot{
+			position: relative;
+		}
+		ul>img{
+			position: absolute;
+			top: -12px;
+			left: 30px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="pic">
+		<img src="ban.jpg" alt="">
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="">导航</a></li>
+			<li class="hot"><a href="">导航</a><img src="hot.png" alt=""></li>
+			<li><a href="">导航</a></li>
+			<li><a href="">导航</a></li>
+			<li><a href="">导航</a></li>
+			<li><a href="">导航</a></li>
+		</ul>
+	</div>
+</body>
+</html>

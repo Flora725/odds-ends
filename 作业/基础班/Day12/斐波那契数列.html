@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		var f=new Array();
+		f[0]=0;
+		f[1]=0;
+		f[2]=1;
+		var n=prompt("please input a number:");
+		for(i=3;i<=n;i++){
+			f[i]=f[i-1]+f[i-2];
+		}
+		alert(f[n]);
+	</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

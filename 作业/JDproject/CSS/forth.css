@@ -1,0 +1,92 @@
+.top{
+    background-color: #F1F1F1;
+}
+.top .wrap{
+     font: 12px/30px "microsoft yahei";
+}
+.top .tool li{
+    float: left;
+}
+.tool .upright{
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    margin: 9px 10px 0px;
+}
+.top .arrow{
+    position: relative;
+    padding-right: 19px;
+}
+.top .arrow i{
+    width: 11px;
+    height: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 14px;
+}
+.top .arrow s{
+    font: 18px "microsoft yahei";
+    position: absolute;
+    top: -13px;
+}
+.tool .tel{
+    padding-left: 16px;
+}
+.tool .tel em{
+    width: 11px;
+    height: 16px;
+    background: url(../image/sprite.png) -2px -2px;
+    position: absolute;
+    left: 0px;
+    top: 7px;
+}
+.banner{
+    background-color: #fcd6e3;
+}
+.banner .wrap{
+    position: relative;
+}
+.banner em{
+    width: 19px;
+    height: 19px;
+    background: url(../image/close.png) no-repeat;
+    position: absolute;
+    right: 4px;
+    top: 5px;
+}
+.banner em:hover{
+    background: url(../image/close.png) no-repeat 0px -19px;
+}
+.search .lo{
+    text-indent: -300px;
+    margin-top: 11px;
+}
+.search .lo a{
+    display: block;
+    width: 266px;
+    height: 42px;
+    background: url(../image/logo.png) no-repeat;
+    margin-right: 95px;
+}
+.search .mi input{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

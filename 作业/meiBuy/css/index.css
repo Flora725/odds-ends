@@ -1,0 +1,338 @@
+.btop {
+	border-top: 1px solid #EEEEEE;
+}
+
+.colorRed {
+	color: red;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fwblog {
+	font-weight: 900;
+}
+/*top B*/
+.banxin {
+	width: 970px;
+	margin: 0 auto;
+}
+.top {
+	height: 26px;
+	border-bottom: 1px solid #D8D8D8;
+	background-color: #F7F7F7;
+}
+.t_center {
+	height: 26px;
+}
+.t_c_wel{
+	line-height: 26px;
+}
+.t_c_nav {
+	height: 26px;
+}
+.t_c_nav li {
+	float: left;
+	line-height: 26px;
+	padding-right: 10px;
+}
+.t_c_nav b {
+	display: inline-block;
+	width: 14px;
+	height: 4px;
+	background: url(../img/sprite.fw.png) no-repeat 0 0 ;
+	vertical-align: middle;
+}
+/* top E*/
+/* logo B*/
+.logo {
+	height: 98px;
+}
+.l_left {
+	width: 200px;
+	height: 58px;
+	background: url(../img/sprite.fw.png) no-repeat 0px -10px;
+	margin: 21px 0 0 10px;
+}
+.l_search {
+	width: 524px;
+	height: 35px;
+	border: 1px solid #C9C9C9;
+	margin-top: 29px;
+	padding: 5px 0 0 4px;
+}
+.l_search .inp {
+	width: 418px;
+	height: 28px;
+	border: 1px solid #C9C9C9;
+	color: #999999;
+}
+.l_search .btn {
+	width: 99px;
+	height: 30px;
+	background: #2F70D0;
+	color: #FFFFFF;
+	font: normal 900 18px "微软雅黑";
+}
+
+/* logo E*/
+/* nav B*/
+.nav {
+	height: 25px;
+	border-bottom: 2px solid #0165A3;
+}
+.nav li {
+	float: left;
+	line-height: 25px;
+}
+.nav li a {
+	display: inline-block;
+	height: 25px;
+	padding: 0 16px;
+	font-weight: bold;
+}
+.nav li a:hover {
+	background: #0165A3;
+	color: white;
+}
+/* nav E*/
+/* news B*/
+.news {
+	margin-top: 10px;
+}
+.n_left {
+	width: 200px;
+	height: 210px;
+	background: red;
+}
+.n_left h3 {
+	height: 30px;
+	line-height: 30px;
+	background: #0165A3;
+	color: white;
+	padding-left: 20px;
+}
+.n_left ul {
+	height: 180px;
+	background: #EBF0F6;
+}
+.n_left li {
+	line-height: 28px;
+}
+.n_left li:hover {
+	background: #FF80FF;
+}
+.n_left b {
+	display: inline-block;
+	width: 16px;
+	height: 14px;
+	background: url(../img/sprite.fw.png) no-repeat 0px -70px;
+	vertical-align: middle;
+	margin: 0 14px 0 9px;
+}
+.n_center {
+	width: 520px;
+	height: 210px;
+	background: pink;
+	margin-left: 10px;
+}
+.n_right {
+	width: 230px;
+	height: 210px;
+	background: yellow;
+}
+.n_r_t {
+	width: 228px;
+	height: 93px;
+	border: 1px solid #E0E6F0;
+	background: #F7FAFF;
+	margin-bottom: 21px;
+}
+.n_r_t h3 {
+	color: #666666;
+	font-size: 12px;
+	padding-left: 20px;
+	margin-top: 7px;
+}
+.n_r_b {
+	height: 94px;
+	width: 230px;
+	background: #F7F7F7;
+	overflow: hidden;
+}
+.n_r_t_mess {
+	height: 40px;
+	margin-top: 20px;
+}
+.n_r_t_mess b {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/sprite.fw.png) no-repeat -30px -70px;
+	vertical-align: middle;
+}
+.n_r_t_mess span {
+	display: inline-block;
+	height: 40px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+.n_r_b .message {
+	font-size: 16px;
+	color: #999999;
+	text-align: center;
+	margin-top: 11px;
+}
+.n_r_b .phone {
+	color: #3F9CE0;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 9px;
+}
+.n_r_b .phone b {
+	display: inline-block;
+	width: 14px;
+	height: 18px;
+	background: url(../img/sprite.fw.png) no-repeat 0px -90px;
+	vertical-align: middle;
+	margin-right: 9px;
+}
+.n_r_b .btn {
+	width: 81px;
+	height: 23px;
+	background: url(../img/sprite.fw.png) no-repeat -80px -70px;
+	margin: 9px 0 0 75px;
+}
+/* news E*/
+.meate {
+	height: 34px;
+	border-top: 2px solid #C3D7E4;
+	background: #ECF1F7;
+	margin-top: 14px;
+	font-weight: bold;
+	line-height: 34px;
+	padding-left: 22px;
+	width: 948px;
+}
+/*goods b*/
+.goods {
+	height: 346px;
+	margin-top: 11px;
+}
+.goods .left {
+	height: 344px;
+	width: 720px;
+	border: 1px solid #D8D8D8;
+	padding: 0 4px;
+}
+.goods .right {
+	width: 228px;
+	height: 344px;
+	border: 1px solid #D8D8D8;
+}
+.g_l_t {
+	height: 172px;
+	padding-left: 20px;
+}
+.g_l_t_mess {
+	width: 350px;
+	height: 172px;
+}
+.goods .g_l_t .iimg{
+	width: 100px;
+	height: 172px;
+}
+.goods .g_l_t .mmess {
+	width: 250px;
+	height: 172px;
+}
+.goods .g_l_t .iimg_img {
+	width: 98px;
+	height: 98px;
+	border: 1px solid #CACACA;
+	margin-top: 15px;
+}
+.goods .g_l_t .iimg_img b {
+	display: inline-block;
+	width: 90px;
+	height: 63px;
+	background: url(../img/sprite.fw.png) no-repeat 0px -115px;
+	margin: 17px 4px;
+}
+.goods .g_l_t .bbtn {
+	width: 100px;
+	height: 26px;
+	background: #0A84E3;
+	margin-top: 15px;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+}
+.goods .g_l_t .goodwife {
+	font-size: 14px;
+	margin: 26px 0 0 10px;
+
+}
+.goods .g_l_t .action {
+	color: #863E01;
+	margin: 14px 0 0 15px;
+}
+.goods .g_l_t .price {
+	margin: 22px 0 0 11px;
+}
+.goods .g_l_t .one {
+	margin: 20px 0 0 14px;
+}
+.goods .right .zixun {
+	font: normal normal 12px "微软雅黑";
+	height: 28px;
+	border: 1px solid #E0E6F0;
+	line-height: 28px;
+	padding-left: 15px;
+	background: #FBFBFB;
+}
+.goods .right ul {
+	margin-top: 10px;
+}
+.goods .right li {
+	height: 24px;
+	line-height: 24px;
+}
+.goods .right b {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background: url(../img/sprite.fw.png) no-repeat -20px -80px;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+/*goods E*/
+/* friend B*/
+.friend {
+	height: 102px;
+	border-top: 1px solid #DDDDDD;
+}
+.friend .f_top {
+	margin-top: 30px;
+}
+.friend .f_bottom {
+	text-indent: 5em;
+	margin-top: 15px;
+}
+/* friend E*/
+.foot {
+	height: 94px;
+	border-top: 3px solid #0A7EC3;
+}
+.foot ul {
+	text-align: center;
+	margin-top:10px;
+}
+.foot li {
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+}
+p{
+	cursor: pointer;
+}
+

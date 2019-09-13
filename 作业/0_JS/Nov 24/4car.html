@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+//        var car = {
+//            brand:"bmw",
+//            color:"black",
+//            price:55,
+//            run:function(){
+//                console.log("run");
+//            },
+//            travel:function(){
+//                console.log("I can travel");
+//            },
+//        }
+//        for(var i=0; i<5;i++){
+//            car["n"+i]=i;
+//        }
+//        console.log(car);
+
+        var car = {};
+        car.brand="bmw";
+        car.color="black";
+        car.price=55;
+        car.run=function(){console.log("run")};
+        car.travel=function(){console.log("travel")};
+//        console.log(car);
+        for( var key in car){
+            console.log(car[key]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

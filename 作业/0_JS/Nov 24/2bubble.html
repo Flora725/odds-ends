@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function sort(arr) {
+            for (var i = arr.length-1; i>0;i--){
+                var con;
+                order = true;
+                for(j=0; j<i;j++){
+                    if(arr[j]>arr[j+1]){
+                        con = arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=con;
+                        order = false;
+                    }
+                }
+                if(order){
+                    break;
+                }
+            }
+            return arr;
+        }
+        newarr = [342,45,65,2,78,546];
+        console.log(sort(newarr));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

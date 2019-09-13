@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+// function fn1(){
+// 	console.log(this);
+// 	console.log(1)
+// };
+
+// function fn2(){
+// 	console.log(this);
+// 	console.log(2)
+// };
+
+// fn3 = fn2.call;
+// call apply 保存在哪个地方？ 实际上call方法就保存在Function.prototype中
+// 其实就是Function.prototype.call 本质上就是一个函数体
+// fn2 这个函数本身没有call方法 需要到fn2这个函数的原型中去找 
+// 函数的构造函数 是 Function 所以fn2的原型对象 是 Function.prototype
+
+ 
+// fn2.call(fn1);//请问输出什么结果，为什么 // 2 this 是fn1
+
+// fn3.call(fn1);//请问输出什么结果，为什么 // 1 this 是window
+// Function.prototype.call.call(fn1);
+// Function.prototype.call 就是一个函数
+// Function.prototype.call.call(fn1) ==>  fn1.call() ==> fn1()
+
+// fn3.call.call.call.call.call.call(fn1);//请问输出什么结果，为什么
+// Function.prototype.call.call.call.call.call.call(fn1); ==> call.call(fn1) ==> fn1.call() ==>fn1()
+// 这里的意思就是让call函数去找 call函数 
+// call 是一个函数 而 call又可以被函数调用
+
+
+// function fn(){}
+
+// new fn(); // 只要用new 关键字引导执行 这个函数 那这个函数就可以称作构造函数
+
+// Function 是所有函数的构造函数
+
+
+function repeat (func, times, wait) {
+
+	// func === log times === 10 wait === 2000
+
+    return function fn(arg){
+        var count = 0;
+        var intervalId = setInterval(function(){
+            // 判断count大于9时就停止定时器 
+            if(count > times - 1){
+                clearInterval(intervalId);
+            }else{
+                func(arg);
+
+                // func.call(console,arg);
+            }
+            count++;
+
+        },wait)
+    }
+}
+// 1.这个函数能返回一个新函数，比如这样用
+var repeatedFun = repeat(alert, 10, 2000);
+var repeatedFun = fn(arg);
+
+repeatedFun('hello-world');
+
+// function log(arg){
+// 	return console.log(arg);
+// }
+
+	</script>
+</body>
+</html>

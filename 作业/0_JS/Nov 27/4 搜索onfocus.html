@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text"  id="txt" value="daddy    "/>
+<button>搜索</button>
+<script>
+    var txt=document.getElementById("txt");
+    txt.onfocus=function(){
+        if(txt.value==="daddy    "){
+            txt.value="";
+        }
+    }
+    txt.onblur=function(){
+        if(txt.value===""){
+            txt.value="daddy    ";
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>

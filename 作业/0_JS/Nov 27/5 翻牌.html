@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--下拉列表-->
+<select name="" id="sel">
+    <option value="">西施</option>
+    <option value="" id="dc">貂蝉</option>
+    <option value="">杨玉环</option>
+    <option value="">王昭君</option>
+</select>
+<input type="button" value="翻牌" id="btn"/>
+<script>
+    var sel=document.getElementById("sel");
+    var opts = document.getElementsByTagName("option");
+    var dc=document.getElementById("dc");
+    var btn=document.getElementById("btn");
+    var i=1;
+    btn.onclick=function(){
+        var abc = Math.floor(Math.random()*4);
+        opts[abc].selected = "selected";
+//        i++;
+//        if(i==4){
+//            i=0;
+//        }
+
+    };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>door</title>
+	<style>
+		.top{
+			min-width: 200px;
+			padding-left: 169px;
+			padding-right: 277px;
+			margin-left: 149px;
+			margin-right: 149px;
+		}
+		.top:after{
+			content: "";
+			height: 0px;
+			line-height: 0px;
+			display: block;
+			clear: both;
+			visibility: none;
+		}
+		.top{
+			*zoom: 1;
+		}
+		.left{
+			height: 220px;
+			margin-left: -169px;
+			float: left;
+		}
+		img{
+			height: 220px;
+			width: 100%;
+			float: left;
+			overflow: hidden;
+		}
+		.right{
+			width: 277px;
+			height: 220px;
+			margin: 0 auto;
+			margin-right: -277px;
+			float: right;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="left">
+			<img src="images/left.jpg" alt="">
+		</div>
+		
+		<img src="images/mid.jpg" alt="">
+		
+		<div class="right">
+			<img src="images/right.jpg" alt="">
+		</div>
+	</div>
+
+</body>
+</html>

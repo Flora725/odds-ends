@@ -1,0 +1,71 @@
+1.微博发布、许愿墙、动态生成列表三遍
+2.作用域习题(如下)
+	- 写出答案和分析过程
+3.预习和复习(明天晚上考试）
+
+
+// 第一题
+var n = 1;
+function f1() {
+    console.log(n);
+}
+function f2 () {
+    console.log(n);
+    n = 2;          
+    f1();
+    console.log(n);
+}
+f2();
+
+// 第二题
+var m = 1;
+function f1() {
+    console.log(m);
+}
+function f3() {
+    function f2() {
+        f1(m);
+    }
+    f2();
+    var m = 3;
+}
+f3();
+
+// 第三题
+  function fn(a){
+        console.log(a);
+        a = 10;
+        console.log(a);
+    }
+    fn(1);
+
+// 第四题
+    function fn(b){
+        console.log(b);
+        function b(){
+            console.log(b);
+        }
+        b();
+    }
+    fn(1);
+
+// 第五题
+    function fn(b){
+        console.log(b);
+        b=function (){
+            console.log(b);
+        };
+        b();
+    }
+    fn(1);
+
+// 第六题
+function fn(b){
+       console.log(b);
+       var b=function (){
+            console.log(b);
+        };
+       b();
+    }
+    fn(1);
+

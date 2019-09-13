@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .out {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .demen{
+            position: relative;
+        }
+        a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: lightblue;
+        }
+        img {
+            position: absolute;
+            right: 0;
+            top: -30px;
+        }
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div class="out" id="outer">
+    <a href="#"></a>
+
+    <div id="inner" class="demen show">
+        <img src="demention2.png"/>
+    </div>
+</div>
+<script>
+    var outer = document.getElementById("outer");
+    var inner = document.getElementById("inner");
+    outer.onmouseover=function(){
+        replaceclassName(inner,"show","hide");
+    };
+    outer.onmouseout=function(){
+        replaceclassName(inner,"hide","show");
+    };
+
+    function replaceclassName(element, oldstr, newstr){
+        element.className = element.className.replace(oldstr, newstr);
+    }
+    outer.onclick = function(){
+        setText(inner, "good");
+    }
+    function setText(element, content){
+        if(typeof innerText ==="string"){
+            element.innerText = content;
+        }else{
+            element.textContent = content;
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+1.请说出下面程序的值：
+	console.log(isNaN(123));   F
+	console.log(isNaN("123")); T
+	console.log(isNaN(123+"123")); T
+	console.log(isNaN(-222)); F
+	console.log(isNaN(0));    F
+	console.log(isNaN(0+"")); T
+
+2.说出下面程序的值：
+	var a = 12;
+	var b = 10;
+	var c = 5;
+	var d = a++;
+	var e = ++b;
+	var f = c + d++;
+	var g = c + ++d;
+	算出d,e,f,g的值。
+
+3.请说出下面与或非运算的结果：
+	alert(true&&true&&!true||true);
+	alert(!true&&true&&false);
+	alert(false||true&&false||false);
+	alert(true&&false||1>2|| 1>3);
+	alert(1>2&& 1>3&&1<2|| 1>3);
+	alert(1<2&&1>3&&!false);
+
+4.请接受用户输入长和宽，计算长方形的周长:(长+宽)*2
+                        计算长方形的面积:长*宽

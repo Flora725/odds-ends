@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function max(arr) {
+            var maximum = arr[0];
+            var minimum = arr[arr.length - 1];
+            var con;
+            for (i = 0; i < arr.length; i++) {
+                if (maximum < arr[i]) {
+                    maximum = arr[i];
+                }
+                if (minimum > arr[i]) {
+                    minimum = arr[i];
+                }
+            }
+            var diff = maximum - minimum;
+            return diff;
+        }
+        var newarr = [23, 45, 4, 56, 23, 47, 87];
+        console.log(max(newarr));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+document.write("<script>(function() {var s = \"_\" +Math.random().toString(36).slice(2);document.write('<div id=\"' + s +'\"></div>');    (window.slotbydup=window.slotbydup || []).push({id: '2543390',container: s,size: '300,250',display: 'inlay-fix'});})();</script>");
+document.write('<script src="http://dup.baidustatic.com/js/os.js"></script>');

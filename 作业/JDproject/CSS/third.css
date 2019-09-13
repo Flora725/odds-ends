@@ -1,0 +1,392 @@
+.top{
+    background-color: #f1f1f1;
+    font: 12px/30px "microsoft yahei";
+}
+.top .tool li{
+    float: left;
+}
+.top .tool .upright{
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    margin: 10px;
+}
+.top .arrowfa{
+    position: relative;
+    padding-right: 20px;
+}
+.top .wrap .arrow{
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    overflow: hidden;
+}
+.top .wrap s{
+    font: 26px "microsoft yahei";
+    position: absolute;
+    top: -18px;
+}
+.top .tool .tel{
+    padding-left: 22px;
+}
+.top .tel>em{
+    width: 11px;
+    height: 16px;
+    background: url(../image/sprite.png) no-repeat -2px -2px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+.top .tel em:hover{
+    background: url(../image/sprite.png) no-repeat -2px -27px;
+}
+.banner{
+    background-color: #fcd6e1;
+}
+.search .logo{
+    margin-top: 9px;
+    width: 362px;
+    text-indent: -400px;
+}
+.search .logo>a{
+    display: block;
+    height: 42px;
+    background: url("../image/logo.png") no-repeat;
+}
+.search .in{
+    width: 785px;
+    margin-top: 25px;
+}
+.search input{
+    width: 454px;
+    height: 32px;
+    border: 2px solid #c91623;
+    color: #666;
+    font: 14px/32px "microsoft yahei";
+    padding-left: 10px;
+}
+.search button{
+    width: 80px;
+    height: 36px;
+    color: white;
+    font: 16px/36px "microsoft yahei";
+    background-color: #c91623;
+}
+.in .cart{
+    width: 140px;
+    height: 38px;
+    border: 1px solid #dfdfdf;
+    background-color: #f9f9f9;
+    padding-left: 42px;
+    font: 12px/38px "microsoft yahei";
+    position: relative;
+}
+.cart .car{
+    width: 16px;
+    height: 13px;
+    background: url(../image/sprite.png) no-repeat -1px -59px;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+.cart .arr{
+    font: 18px/38px "microsoft yahei";
+    position: absolute;
+    right: 10px;
+}
+.cart>.num{
+    padding: 0 8px;
+    height: 14px;
+    background-color: #c91623;
+    border-radius: 7px 7px 7px 0;
+    color: white;
+    font: 12px/14px "microsoft yahei";
+    position: absolute;
+    top: -5px;
+    left: 94px;
+}
+.search .hotword{
+    font: 12px/30px "microsoft yahei";
+    margin-bottom: 9px;
+}
+.hotword a{
+    margin-right: 10px;
+}
+/*Above is search area.*/
+
+/*Start of navigation:*/
+.nav{
+    border-bottom: 2px solid #b1191a;
+}
+.nav .wrap .category{
+    height: 44px;
+    width: 210px;
+    background-color: #b1191a;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.nav .category dt{
+    padding-left: 10px;
+    margin-bottom: 2px;
+    font: 16px/44px "microsoft yahei";
+}
+.nav dd a{
+    display: block;
+    padding-left: 10px;
+    color: white;
+    font: 14px/31px "microsoft yahei";
+    border-left: 1px solid #b1191a;
+    background-color: #C81623;
+    position: relative;
+}
+.nav dd a>i{
+    position: absolute;
+    right: 13px;
+}
+.nav dd:hover a{
+    background-color: white;
+    color: #b1191a;
+}
+.nav .navitem li{
+    float: left;
+    margin: 0 20px;
+    font: 16px/44px "microsoft yahei";
+    line-height: 44px;
+}
+.navitem li a:hover{
+    color: #C81623;
+}
+/*End of navigation.*/
+
+/*Start of big background:*/
+.bbg{
+    position: absolute;
+    width: 100%;
+}
+.bbg a{
+    display: block;
+    height: 603px;
+    background: url("../image/bbg.jpg") no-repeat top center;
+}
+/*End of big background.*/
+
+/*Start of mainbody:*/
+.main{
+    position: relative;
+}
+.main .slider{
+    width: 730px;
+    height: 454px;
+    margin: 12px 10px 10px 286px;
+    position: relative;
+}
+.slider .num{
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    margin-left: -66px;
+}
+.slider .num li{
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
+    background-color: #666;
+    border-radius: 9px;
+    text-align: center;
+    vertical-align: middle;
+}
+.slider .num ul li>a{
+    color: white;
+}
+.slider .num li:hover{
+    background-color: #b1191a;
+}
+.slider .arr1,.arr2{
+    width: 28px;
+    height: 62px;
+    background-color: rgba(5,5,5,0.3);
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    font: 400 22px/62px "microsoft yahei";
+}
+.arr .arr2{
+    right: 0px;
+}
+.main .extra{
+    width: 248px;
+    border: 1px solid #e4e4e4;
+    border-bottom: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.extra .news{
+    margin-top: 12px;
+}
+.extra .news h3{
+    font: 400 16px/32px "microsoft yahei";
+    padding-left: 15px;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+.news h3 span{
+    font: 12px/32px "microsoft yahei";
+    position: absolute;
+    right: 15px;
+}
+.news ul{
+    border-bottom: 1px solid #e4e4e4;
+}
+.news a{
+    font: 12px/24px "microsoft yahei";
+    padding: 6px 0 4px 15px;
+}
+.news a span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.main .life li{
+    float: left;
+}
+.main .life ul{
+    width: 257px;
+}
+.main .life a{
+    display: block;
+    width: 62px;
+    height: 58px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+.main .life i{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../image/life.png);
+    margin: 13px 0 5px 18px;
+}
+/*End of mainbody.*/
+
+/*Start of rolling picture:*/
+.roll{
+    position: relative;
+    margin-bottom: 20px;
+}
+.april{
+    height: 164px;
+}
+.roll .anni{
+    width: 1000px;
+}
+.roll .anni li{
+    float: left;
+}
+.roll .anni ul{
+    width: 11000px;
+}
+.roll .anni a{
+    display: block;
+    width: 250px;
+    height: 164px;
+    margin-right: 1px;
+    background: url(../image/adli.jpg) no-repeat;
+}
+
+
+
+
+
+
+/*End of rolling picture.*/
+
+/*Below is slogan of Jingdong:*/
+.slogan{
+    height: 94px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.slogan img{
+    position: absolute;
+    left: 50%;
+    top: 15px;
+}
+.slogan .i1{
+    margin-left: -606px;
+}
+.slogan .i2 {
+    margin-left: -303px;
+}
+.slogan .i4 {
+    margin-left: 303px;
+}
+.service .wrap{
+    margin-top: 15px;
+}
+.service dl{
+    width: 199px;
+}
+.service .last{
+    width: 100px;
+}
+.service dt,h3{
+    font: 16px/35px "microsoft yahei";
+}
+.service dd,p{
+    font: 12px/24px "microsoft yahei";
+}
+.service .map{
+    width: 202px;
+    height: 169px;
+    background: url(../image/china.png) no-repeat
+left bottom;
+    margin-right: 40px;
+}
+.footer .copyright{
+    font: 12px/20px "microsoft yahei";
+}
+.footer .friend a{
+    font: 12px/36px "microsoft yahei";
+}
+.footer .friend{
+    padding-top: 12px;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 19px;
+}
+.footer .auth{
+    margin: 26px 0 32px 0;
+}
+.footer .auth a{
+    margin-right: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
